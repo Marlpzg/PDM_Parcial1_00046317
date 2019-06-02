@@ -157,6 +157,7 @@ class MatchFragment : Fragment() {
     }
 
     override fun onDetach() {
+        viewModel.updateMatch(viewModel.currentMatch.value!!)
         super.onDetach()
         listener = null
     }
