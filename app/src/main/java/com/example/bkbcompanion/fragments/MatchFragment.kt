@@ -135,6 +135,16 @@ class MatchFragment : Fragment() {
             Toast.makeText(context, "El partido ha finalizado.", Toast.LENGTH_LONG).show()
             comunicacion.viewMatches()
         }
+
+        btn_suspendMatch.setOnClickListener {
+            comunicacion.viewMatches()
+        }
+
+        btn_resetMatch.setOnClickListener {
+            viewModel.currentMatch.value!!.guestScore = 0
+            viewModel.currentMatch.value!!.homeScore = 0
+            updateMatch()
+        }
     }
 
     fun updateMatch(){

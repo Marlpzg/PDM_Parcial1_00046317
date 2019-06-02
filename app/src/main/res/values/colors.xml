@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#d15a00</color>
+    <color name="colorPrimaryDark">#aa4900</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorWinner">#229922</color>
     <color name="colorLoser">#CC2222</color>
+    <color name="btn_blue">#00a7d6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="btn_green">#00a32e</color>
+    <color name="btn_orange">#dd7a00</color>
+    <color name="btn_red">#c40000</color>
+    <color name="btn_jade">#00c496</color>
 </resources>

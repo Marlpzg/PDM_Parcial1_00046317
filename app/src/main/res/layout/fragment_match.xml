@@ -11,6 +11,7 @@
         android:layout_height="0dp"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/small_gap"
+        android:layout_marginBottom="8dp"
         android:layout_weight="1">
 
         <LinearLayout
@@ -48,21 +49,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/small_gap"
-                android:text="@string/action_3_points" />
+                android:text="@string/action_3_points"
+                android:background="@color/btn_blue"
+                android:textColor="@color/white"/>
 
             <Button
                 android:id="@+id/bt_team_a_2_p"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/small_gap"
-                android:text="@string/action_2_points"/>
+                android:text="@string/action_2_points"
+                android:textColor="@color/white"
+                android:background="@color/btn_green"/>
 
             <Button
                 android:id="@+id/bt_team_a_free_throw"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/small_gap"
-                android:text="@string/action_free_throw"/>
+                android:text="@string/action_free_throw"
+                android:textColor="@color/white"
+                android:background="@color/btn_orange"/>
 
         </LinearLayout>
 
@@ -72,7 +79,7 @@
             android:layout_marginLeft="@dimen/medium_gap"
             android:layout_marginTop="@dimen/medium_gap"
             android:layout_marginRight="@dimen/medium_gap"
-            android:background="#D8D4D4" />
+            android:background="#000000" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -108,29 +115,68 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/small_gap"
-                android:text="@string/action_3_points"/>
+                android:text="@string/action_3_points"
+                android:background="@color/btn_blue"
+                android:textColor="@color/white"/>
 
             <Button
                 android:id="@+id/bt_team_b_2_p"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/small_gap"
-                android:text="@string/action_2_points"/>
+                android:text="@string/action_2_points"
+                android:textColor="@color/white"
+                android:background="@color/btn_green"/>
 
             <Button
                 android:id="@+id/bt_team_b_free_throw"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/small_gap"
-                android:text="@string/action_free_throw"/>
+                android:text="@string/action_free_throw"
+                android:textColor="@color/white"
+                android:background="@color/btn_orange"/>
 
         </LinearLayout>
 
     </LinearLayout>
     <Button
-        android:id="@+id/btn_endMatch"
+        android:id="@+id/btn_suspendMatch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/small_gap"
-        android:text="Terminar Partido"/>
+        android:layout_margin="@dimen/small_gap"
+        android:text="Suspender Partido"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/btn_jade"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_resetMatch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_gap"
+            android:text="Reiniciar Partido"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/btn_orange"/>
+
+        <Button
+            android:id="@+id/btn_endMatch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_gap"
+            android:text="Terminar Partido"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/btn_red"/>
+
+    </LinearLayout>
+
 </LinearLayout>

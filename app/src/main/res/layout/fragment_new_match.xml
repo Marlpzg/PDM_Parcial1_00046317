@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".fragments.NewMatchFragment"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="#EEEEEE">
 
     <TextView
         android:layout_width="match_parent"
@@ -64,6 +65,8 @@
         android:layout_margin="15dp"
         android:text="Crear"
         android:paddingLeft="30dp"
-        android:paddingRight="30dp"/>
+        android:paddingRight="30dp"
+        android:textColor="@color/white"
+        android:background="@color/btn_jade"/>
 
 </LinearLayout>

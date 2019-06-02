@@ -9,21 +9,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#fff">
+        android:background="#EEEEEE"
+        android:padding="5dp">
         <Button
             android:id="@+id/btn_addMatch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Agregar Partido"
             android:textSize="20sp"
-            android:padding="15dp"/>
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:background="@color/btn_jade"/>
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_matches"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="#EEEEEE">
 
     </androidx.recyclerview.widget.RecyclerView>
 
